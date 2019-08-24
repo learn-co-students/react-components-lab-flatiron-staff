@@ -35,10 +35,13 @@ export class ButcherShop extends React.Component {
     return <div class="butcher-shop">
     <p>Hello! We have the following products for sale today:</p>
     <ul>
-      <li>Tenderloin</li>
+      {/* <li>Tenderloin</li>
       <li>Short ribs</li>
       <li>Beef shin</li>
-      <li>Ribeye</li>
+      <li>Ribeye</li> */}
+      {BUTCHER_PRODUCTS.map(food => {
+        return <li>{food}</li>
+      })}
     </ul>
   </div>
   }
